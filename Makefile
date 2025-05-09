@@ -11,7 +11,7 @@ all: config up
 
 config:
 	@if [ ! -f ./srcs/.env ]; then \
-		wget -O ./srcs/.env https://raw.githubusercontent.com/Chrystian-Natanael/Inception/refs/heads/master/srcs/.env; \
+		wget -O ./srcs/.env https://gist.githubusercontent.com/Chrystian-Natanael/ec80ecfc6d12332a9c73fa67c49bceda/raw/b8d525d41048bfed82e452139056a89890095a6f/gistfile1.txt; \
 	fi
 
 	@if ! grep -q '$(USER)' /etc/hosts; then \
@@ -46,7 +46,7 @@ clean:
 	$(DOCKER_COMPOSE_EXE) down --rmi all --volumes
 
 fclean: clean
-	# rm ./srcs/.env
+	rm ./srcs/.env
 	docker system prune --force --all --volumes
 	sudo rm -rf /home/$(USER)/data
 
