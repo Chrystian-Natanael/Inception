@@ -1,4 +1,4 @@
-USER = chrystian-natanael
+USER = cnatanae
 
 MARIA_DB_DIR = /home/$(USER)/data/mariadb
 WP_PHP_DIR = /home/$(USER)/data/wordpress

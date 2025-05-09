@@ -10,14 +10,14 @@ volumes:
     driver_opts:
       o: bind
       type: none
-      device: /home/chrystian-natanael/data/wordpress
+      device: /home/cnatanae/data/wordpress
 
   mariadb_volume:
     name: mariadb_volume
     driver_opts:
       o: bind
       type: none
-      device: /home/chrystian-natanael/data/mariadb
+      device: /home/cnatanae/data/mariadb
 
 services:
   mariadb:
